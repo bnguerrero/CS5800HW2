@@ -1,4 +1,4 @@
-package CS5800HW2;
+package CS5800HW2.Builder;
 
 interface Builder 
 {

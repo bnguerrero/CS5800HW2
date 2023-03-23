@@ -1,5 +1,4 @@
-package CS5800HW2;
-
+package CS5800HW2.Builder;
 
 public class Pizza implements PizzaInterface
 {
@@ -32,6 +31,6 @@ public class Pizza implements PizzaInterface
 
     public void eat()
         {
-            System.out.println("Pizza chain: " + chain + " Pizza size " + size + " toppings: " + toppings);
+            System.out.println("Pizza chain: " + chain + ", Pizza size: " + size + ", toppings: " + toppings);
         }
 }
