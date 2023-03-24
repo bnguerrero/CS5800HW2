@@ -28,6 +28,18 @@ public class FactoryCreator
         {
             return new EmbraerFactory();
         }
+        else if (type.equalsIgnoreCase("searay"))
+        {
+            return new SeaRayFactory();
+        }
+        else if (type.equalsIgnoreCase("mastercraft"))
+        {
+            return new MasterCraftFactory();
+        }
+        else if (type.equalsIgnoreCase("bertram"))
+        {
+            return new BertramFactory();
+        }
         else
         {
             System.out.println( "please specify a valid type");
