@@ -3,20 +3,20 @@ package CS5800HW2.AbstractFactory;
 public class SeaRayFactory extends VehicleFactory
 {
     @Override
-    public Build build()
+    public void build()
     {
-        return new SeaRayBuild();
+        System.out.println("SeaRay built a boat");
+    }
+    
+    @Override
+    public void repair()
+    {
+        System.out.println("SeaRay repaired a boat");
     }
 
     @Override
-    public Repair repair()
+    public void restore()
     {
-        return new SeaRayRepair();
-    }
-
-    @Override
-    public Restore restore()
-    {
-        return new SeaRayRestore();
+        System.out.println("SeaRay restored a boat");
     }
 }

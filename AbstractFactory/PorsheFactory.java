@@ -3,20 +3,20 @@ package CS5800HW2.AbstractFactory;
 public class PorsheFactory extends VehicleFactory
 {
     @Override
-    public Build build()
+    public void build()
     {
-        return new PorsheBuild();
+        System.out.println("Porshe built a car");
+    }
+    
+    @Override
+    public void repair()
+    {
+        System.out.println("Porshe repaired a car");
     }
 
     @Override
-    public Repair repair()
+    public void restore()
     {
-        return new PorsheRepair();
-    }
-
-    @Override
-    public Restore restore()
-    {
-        return new PorsheRestore();
+        System.out.println("Porshe restored a car");
     }
 }

@@ -3,20 +3,20 @@ package CS5800HW2.AbstractFactory;
 public class EmbraerFactory extends VehicleFactory
 {
     @Override
-    public Build build()
+    public void build()
     {
-        return new EmbraerBuild();
+        System.out.println("Embraer built an airplane");
+    }
+    
+    @Override
+    public void repair()
+    {
+        System.out.println("Embraer repaired an airplane");
     }
 
     @Override
-    public Repair repair()
+    public void restore()
     {
-        return new EmbraerRepair();
-    }
-
-    @Override
-    public Restore restore()
-    {
-        return new EmbraerRestore();
+        System.out.println("Embraer restored an airplane");
     }
 }

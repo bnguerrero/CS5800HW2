@@ -3,20 +3,20 @@ package CS5800HW2.AbstractFactory;
 public class HondaFactory extends VehicleFactory
 {
     @Override
-    public Build build()
+    public void build()
     {
-        return new HondaBuild();
+        System.out.println("Honda built a car");
     }
 
     @Override
-    public Repair repair()
+    public void repair()
     {
-        return new HondaRepair();
+        System.out.println("Honda repaired a car");
     }
 
     @Override
-    public Restore restore()
+    public void restore()
     {
-        return new HondaRestore();
+        System.out.println("Honda restored a car");
     }
 }

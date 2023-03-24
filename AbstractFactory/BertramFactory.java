@@ -3,20 +3,21 @@ package CS5800HW2.AbstractFactory;
 public class BertramFactory extends VehicleFactory
 {
     @Override
-    public Build build()
+    public void build()
     {
-        return new BertramBuild();
+        System.out.println("Bertram built a boat");
+    }
+    
+    @Override
+    public void repair()
+    {
+        System.out.println("Bertram repaired a boat");
     }
 
     @Override
-    public Repair repair()
+    public void restore()
+    
     {
-        return new BertramRepair();
-    }
-
-    @Override
-    public Restore restore()
-    {
-        return new BertramRestore();
+        System.out.println("Bertram restored a boat");
     }
 }

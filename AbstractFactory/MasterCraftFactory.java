@@ -3,20 +3,20 @@ package CS5800HW2.AbstractFactory;
 public class MasterCraftFactory extends VehicleFactory
 {
     @Override
-    public Build build()
+    public void build()
     {
-        return new MasterCraftBuild();
+        System.out.println("Mastercraft built a boat");
+    }
+    
+    @Override
+    public void repair()
+    {
+        System.out.println("Mastercraft repaired a boat");
     }
 
     @Override
-    public Repair repair()
+    public void restore()
     {
-        return new MasterCraftRepair();
-    }
-
-    @Override
-    public Restore restore()
-    {
-        return new MasterCraftRestore();
+        System.out.println("Mastercraft restored a boat");
     }
 }

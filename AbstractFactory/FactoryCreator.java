@@ -45,7 +45,6 @@ public class FactoryCreator
             System.out.println( "please specify a valid type");
             return null;
         }
-    
     }
+}
 
-    }
