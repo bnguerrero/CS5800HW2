@@ -1,8 +1,8 @@
-package CS5800HW2.AbstractFactory.Car;
+package CS5800HW2.AbstractFactory;
 
 public class FactoryCreator 
 {
-    public static CarFactory createFactory(String type)
+    public static VehicleFactory createFactory(String type)
     {
         if(type.equalsIgnoreCase("tesla"))
         {

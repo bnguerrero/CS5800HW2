@@ -1,6 +1,6 @@
-package CS5800HW2.AbstractFactory.Car;
+package CS5800HW2.AbstractFactory;
 
-public class CarFactoryBuilder 
+public class VehicleFactoryBuilder 
 {
     public static void main(String[] args) 
     {
@@ -13,10 +13,10 @@ public class CarFactoryBuilder
 
     public static void createCarWithAbstractFactory(String type)
     {
-        CarFactory carFactory = FactoryCreator.createFactory(type);
-        Build buildHonda = carFactory.build();
-        Repair repairHonda = carFactory.repair();
-        Restore restoreHonda = carFactory.restore();
+        VehicleFactory vehicleFactory = FactoryCreator.createFactory(type);
+        Build buildHonda = vehicleFactory.build();
+        Repair repairHonda = vehicleFactory.repair();
+        Restore restoreHonda = vehicleFactory.restore();
         buildHonda.build();
         repairHonda.repair();
         restoreHonda.restore();

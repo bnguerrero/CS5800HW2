@@ -1,6 +1,6 @@
-package CS5800HW2.AbstractFactory.Car;
+package CS5800HW2.AbstractFactory;
 
-public class TeslaFactory extends CarFactory
+public class TeslaFactory extends VehicleFactory
 {
     @Override
     public Build build()

@@ -1,4 +1,4 @@
-package CS5800HW2.AbstractFactory.Car;
+package CS5800HW2.AbstractFactory;
 
 public class TeslaRepair extends Repair
 {

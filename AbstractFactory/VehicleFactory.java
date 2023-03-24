@@ -1,8 +1,7 @@
-package CS5800HW2.AbstractFactory.Car;
+package CS5800HW2.AbstractFactory;
 
-public abstract class CarFactory 
+public abstract class VehicleFactory 
 {
-
     abstract Build build();
     abstract Repair repair();
     abstract Restore restore();
