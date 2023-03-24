@@ -9,6 +9,12 @@ public class VehicleFactoryBuilder
         createCarWithAbstractFactory("porshe");
         System.out.println("\n");
         createCarWithAbstractFactory("tesla");
+        System.out.println("\n");
+        createCarWithAbstractFactory("airbus");
+        System.out.println("\n");
+        createCarWithAbstractFactory("boeing");
+        System.out.println("\n");
+        createCarWithAbstractFactory("embraer");
     }
 
     public static void createCarWithAbstractFactory(String type)

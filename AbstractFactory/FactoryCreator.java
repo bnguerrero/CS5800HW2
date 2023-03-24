@@ -16,6 +16,18 @@ public class FactoryCreator
         {
             return new PorsheFactory();
         }
+        else if (type.equalsIgnoreCase("airbus"))
+        {
+            return new AirbusFactory();
+        }
+        else if (type.equalsIgnoreCase("boeing"))
+        {
+            return new BoeingFactory();
+        }
+        else if (type.equalsIgnoreCase("embraer"))
+        {
+            return new EmbraerFactory();
+        }
         else
         {
             System.out.println( "please specify a valid type");
